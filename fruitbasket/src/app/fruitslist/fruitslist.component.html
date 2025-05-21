@@ -21,12 +21,11 @@
                                 <img src="./assets/img/stars/star-half.svg" alt="" srcset="">
                             } @else {
                                 <img src="./assets/img/stars/star-empty.svg" alt="" srcset="">
-                            }                      
+                            }                
 
-
-                        }
+                                }
                         
-                        <p>({{item.stars}})</p>
+                        <p [ngClass]="{'fontColorBad': item.stars < 3, 'fontColorGood': item.stars >= 3 }">({{item.stars}})</p>
                     </div>
                 </div>
                 <div><b>Art:</b><br>{{item.genus}}</div>
