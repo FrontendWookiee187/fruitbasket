@@ -1,18 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-fruitslist',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './fruitslist.component.html',
-  styleUrl: './fruitslist.component.scss'
-})
-export class FruitslistComponent {
-
-  howItWorks = "fine";
-
-    fruitlist = [
+  fruitlist = [
     {
       name: "Apfel",
       img:"apple.png",
@@ -62,5 +48,3 @@ export class FruitslistComponent {
       reviews:[{name: "Kevin W.", text: "Ganz gut in der Regel!"},{name: "Oliver J.", text: "Absoluter Favorit beim Frühstück"}],
     },
   ]
-
-}
